@@ -11,6 +11,7 @@
 
 use ADKGamers\Webadmin\Libs\BF3Conn;
 use ADKGamers\Webadmin\Libs\BF4Conn;
+use ADKGamers\Webadmin\Libs\BFHConn;
 use ADKGamers\Webadmin\Libs\Helpers\Battlefield AS BFHelper;
 use ADKGamers\Webadmin\Libs\Helpers\Main AS Helper;
 use ADKGamers\Webadmin\Models\AdKats\Setting AS AdKatsSetting;
@@ -158,6 +159,14 @@ class AdminServerDirect extends \BaseController
                     $this->conn = new BF4Conn(array($this->server_ip, $this->server_port, null));
                     $this->admin = $this->user->preferences->bf4player;
                 break;
+
+                case "BFH":
+                    if( !Entrust::can('scoreboard.bf4') )
+                        throw new BattlefieldException('You do not have permission to administrate this server through the web interface.');
+
+                    $this->conn = new BFHConn(array($this->server_ip, $this->server_port, null));
+                    $this->admin = NULL;
+                break;
             }
 
             // Check if we are connected to the gameserver
@@ -211,8 +220,8 @@ class AdminServerDirect extends \BaseController
             $chat->ServerID       = $this->server_id;
             $chat->logDate        = $datetime;
             $chat->logMessage     = $message;
-            $chat->logPlayerID    = $this->admin->PlayerID;
-            $chat->logSoldierName = $this->admin->SoldierName;
+            $chat->logPlayerID    = (empty($this->admin) ? NULL : $this->admin->PlayerID);
+            $chat->logSoldierName = (empty($this->admin) ? $this->user->username : $this->admin->SoldierName);
             $chat->logSubset      = 'Global';
             $chat->save();
         }

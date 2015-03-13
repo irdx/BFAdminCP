@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mapNames>
+    <!-- Large Conquest Maps -->
+    <map uri="mp_bank" name="Bank Job" playmode="TurfWarLarge0" />
+    <map uri="mp_bloodout" name="ToBeAdded" playmode="TurfWarLarge0" />
+    <map uri="mp_desert05" name="Dust Bowl" playmode="TurfWarLarge0" />
+    <map uri="mp_downtown" name="Downtown" playmode="TurfWarLarge0" />
+    <map uri="mp_eastside" name="ToBeAdded" playmode="TurfWarLarge0" />
+    <map uri="mp_glades" name="Everglades" playmode="TurfWarLarge0" />
+    <map uri="mp_growhouse" name="ToBeAdded" playmode="TurfWarLarge0" />
+    <map uri="mp_hills" name="ToBeAdded" playmode="TurfWarLarge0" />
+    <map uri="mp_offshore" name="ToBeAdded" playmode="TurfWarLarge0" />
+
+    <!-- Small Conquest Maps -->
+    <map uri="mp_bank" name="Bank Job" playmode="TurfWarSmall0" />
+    <map uri="mp_bloodout" name="ToBeAdded" playmode="TurfWarSmall0" />
+    <map uri="mp_desert05" name="Dust Bowl" playmode="TurfWarSmall0" />
+    <map uri="mp_downtown" name="Downtown" playmode="TurfWarSmall0" />
+    <map uri="mp_eastside" name="ToBeAdded" playmode="TurfWarSmall0" />
+    <map uri="mp_glades" name="Everglades" playmode="TurfWarSmall0" />
+    <map uri="mp_growhouse" name="ToBeAdded" playmode="TurfWarSmall0" />
+    <map uri="mp_hills" name="ToBeAdded" playmode="TurfWarSmall0" />
+    <map uri="mp_offshore" name="ToBeAdded" playmode="TurfWarSmall0" />
+
+    <!-- Hiest Maps -->
+    <map uri="mp_bank" name="Bank Job" playmode="Heist0" />
+    <map uri="mp_bloodout" name="ToBeAdded" playmode="Heist0" />
+    <map uri="mp_desert05" name="Dust Bowl" playmode="Heist0" />
+    <map uri="mp_downtown" name="Downtown" playmode="Heist0" />
+    <map uri="mp_eastside" name="ToBeAdded" playmode="Heist0" />
+    <map uri="mp_glades" name="Everglades" playmode="Heist0" />
+    <map uri="mp_growhouse" name="ToBeAdded" playmode="Heist0" />
+    <map uri="mp_hills" name="ToBeAdded" playmode="Heist0" />
+    <map uri="mp_offshore" name="ToBeAdded" playmode="Heist0" />
+
+    <!-- Hotwire Maps -->
+    <map uri="mp_desert05" name="Dust Bowl" playmode="Hotwire0" />
+    <map uri="mp_downtown" name="Downtown" playmode="Hotwire0" />
+    <map uri="mp_glades" name="Everglades" playmode="Hotwire0" />
+
+    <!-- Bloodmoney Maps -->
+    <map uri="mp_bank" name="Bank Job" playmode="Bloodmoney0" />
+    <map uri="mp_bloodout" name="ToBeAdded" playmode="Bloodmoney0" />
+    <map uri="mp_desert05" name="Dust Bowl" playmode="Bloodmoney0" />
+    <map uri="mp_downtown" name="Downtown" playmode="Bloodmoney0" />
+    <map uri="mp_eastside" name="ToBeAdded" playmode="Bloodmoney0" />
+    <map uri="mp_glades" name="Everglades" playmode="Bloodmoney0" />
+    <map uri="mp_growhouse" name="ToBeAdded" playmode="Bloodmoney0" />
+    <map uri="mp_hills" name="ToBeAdded" playmode="Bloodmoney0" />
+    <map uri="mp_offshore" name="ToBeAdded" playmode="Bloodmoney0" />
+
+    <!-- Crosshair Maps -->
+    <map uri="mp_bank" name="Bank Job" playmode="Hit0" />
+    <map uri="mp_bloodout" name="ToBeAdded" playmode="Hit0" />
+    <map uri="mp_desert05" name="Dust Bowl" playmode="Hit0" />
+    <map uri="mp_downtown" name="Downtown" playmode="Hit0" />
+    <map uri="mp_eastside" name="ToBeAdded" playmode="Hit0" />
+    <map uri="mp_glades" name="Everglades" playmode="Hit0" />
+    <map uri="mp_growhouse" name="ToBeAdded" playmode="Hit0" />
+    <map uri="mp_hills" name="ToBeAdded" playmode="Hit0" />
+    <map uri="mp_offshore" name="ToBeAdded" playmode="Hit0" />
+
+    <!-- Rescue Maps -->
+    <map uri="mp_bank" name="Bank Job" playmode="Hostage0" />
+    <map uri="mp_bloodout" name="ToBeAdded" playmode="Hostage0" />
+    <map uri="mp_desert05" name="Dust Bowl" playmode="Hostage0" />
+    <map uri="mp_downtown" name="Downtown" playmode="Hostage0" />
+    <map uri="mp_eastside" name="ToBeAdded" playmode="Hostage0" />
+    <map uri="mp_glades" name="Everglades" playmode="Hostage0" />
+    <map uri="mp_growhouse" name="ToBeAdded" playmode="Hostage0" />
+    <map uri="mp_hills" name="ToBeAdded" playmode="Hostage0" />
+    <map uri="mp_offshore" name="ToBeAdded" playmode="Hostage0" />
+
+    <!-- Team Deathmatch Maps -->
+    <map uri="mp_bank" name="Bank Job" playmode="TeamDeathMatch0" />
+    <map uri="mp_bloodout" name="ToBeAdded" playmode="TeamDeathMatch0" />
+    <map uri="mp_desert05" name="Dust Bowl" playmode="TeamDeathMatch0" />
+    <map uri="mp_downtown" name="Downtown" playmode="TeamDeathMatch0" />
+    <map uri="mp_eastside" name="ToBeAdded" playmode="TeamDeathMatch0" />
+    <map uri="mp_glades" name="Everglades" playmode="TeamDeathMatch0" />
+    <map uri="mp_growhouse" name="ToBeAdded" playmode="TeamDeathMatch0" />
+    <map uri="mp_hills" name="ToBeAdded" playmode="TeamDeathMatch0" />
+    <map uri="mp_offshore" name="ToBeAdded" playmode="TeamDeathMatch0" />
+</mapNames>

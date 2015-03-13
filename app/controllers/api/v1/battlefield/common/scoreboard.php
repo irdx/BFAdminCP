@@ -10,6 +10,7 @@
  */
 use ADKGamers\Webadmin\Libs\BF3Conn;
 use ADKGamers\Webadmin\Libs\BF4Conn;
+use ADKGamers\Webadmin\Libs\BFHConn;
 use ADKGamers\Webadmin\Libs\Helpers\Battlefield AS BFHelper;
 use ADKGamers\Webadmin\Libs\Helpers\Main AS Helper;
 use ADKGamers\Webadmin\Models\Battlefield\Player;
@@ -118,13 +119,22 @@ class Scoreboard extends \BaseController
                 case "BF3":
                     $this->data['isBF3'] = TRUE;
                     $this->data['isBF4'] = FALSE;
+                    $this->data['isBFH'] = FALSE;
                     $this->conn = new BF3Conn(array($this->server_ip, $this->server_port, null));
                 break;
 
                 case "BF4":
                     $this->data['isBF3'] = FALSE;
                     $this->data['isBF4'] = TRUE;
+                    $this->data['isBFH'] = FALSE;
                     $this->conn = new BF4Conn(array($this->server_ip, $this->server_port, null));
+                break;
+
+                case "BFH":
+                    $this->data['isBF3'] = FALSE;
+                    $this->data['isBF4'] = FALSE;
+                    $this->data['isBFH'] = TRUE;
+                    $this->conn = new BFHConn(array($this->server_ip, $this->server_port, null));
                 break;
 
                 default:
@@ -154,6 +164,7 @@ class Scoreboard extends \BaseController
                     $this->fetchBf3GameData();
                 break;
 
+                case "BFH";
                 case "BF4":
                     $this->fetchBf4GameData();
                 break;
@@ -514,7 +525,7 @@ class Scoreboard extends \BaseController
         }
         else
         {
-            if($this->game == 'BF4')
+            if($this->game == 'BF4' || $this->game == 'BFH')
             {
                 $loop_count = $players[12];
             }
@@ -545,7 +556,7 @@ class Scoreboard extends \BaseController
                     $isSquadPrivate = $squadStatus[$player_team_id][$player_squad_id];
                 } else $isSquadPrivate = NULL;
 
-                if($this->game == 'BF4')
+                if($this->game == 'BF4' || $this->game == 'BFH')
                 {
                     $player_ping = intval( $players[ ( $players[1] ) * $i + $players[1] + 11 ] );
                     $player_type = intval( $players[ ( $players[1] ) * $i + $players[1] + 12 ] );
@@ -765,6 +776,11 @@ class Scoreboard extends \BaseController
             case "BF4":
                 $filePath = app_path() . "/thirdparty/bf4/mapNames.xml";
                 $filePath2 = app_path() . "/thirdparty/bf4/playModes.xml";
+            break;
+
+            case "BFH":
+                $filePath = app_path() . "/thirdparty/bfh/mapNames.xml";
+                $filePath2 = app_path() . "/thirdparty/bfh/playModes.xml";
             break;
         }
 
